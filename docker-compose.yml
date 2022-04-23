@@ -1,8 +1,5 @@
 version: '3.3'
 
-volumes:
-  db-volume:
-
 services:
   app:
     build:
@@ -45,3 +42,6 @@ services:
       TZ: 'Asia/Tokyo'
     volumes:
       - db-volume:/var/lib/mysql
+
+volumes:
+  db-volume:
